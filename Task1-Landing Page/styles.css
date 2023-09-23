@@ -19,3 +19,36 @@ html{
     color:red;
 }
 /* Navbar ENds */
+/* Home STarts */
+/* Section 1 */
+.product-left-img{
+    width: 700px;
+    height: 350px;
+    margin-left: 1rem;
+    margin-left: 3rem;
+    margin-top: 2rem;
+}
+
+.ct2{
+    padding: 30px 55px 30px 55px;
+}
+
+.heading{
+    font-size: 28px;
+    font-weight: 600;
+    padding-bottom: 25px; 
+    margin-left: 1rem;
+}
+
+.main-txt{
+    font-size: 23px;
+    font-weight: 450;
+    margin-left: 1rem;
+}
+
+.prd-right{
+    text-align: center;
+margin-top: 6%;
+}
+
+/* Section 1 */
