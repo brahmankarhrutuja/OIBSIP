@@ -1,54 +1,123 @@
-html{
-    overflow-x: hidden;
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
+
+body {
+  background-color: antiquewhite;
+}
+
 /* Navbar Starts */
-.logo-img{
-    width: 30%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 40px;
-    margin-right: 30px;
+.logo-img {
+  width: 30%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 40px;
+  margin-right: 30px;
 }
 
-.nav-link:hover{
-  color:red;
-  font-weight:500;
+.nav-link:hover {
+  color: red;
+  font-weight: 500;
 }
 
-.nav-link:active{
-    color:red;
+.nav-link:active {
+  color: red;
 }
 /* Navbar ENds */
 /* Home STarts */
 /* Section 1 */
-.product-left-img{
-    width: 700px;
-    height: 350px;
-    margin-left: 1rem;
-    margin-left: 3rem;
-    margin-top: 2rem;
+
+.row {
+  margin: 0;
 }
 
-.ct2{
-    padding: 30px 55px 30px 55px;
+.product-left-img {
+  width: 700px;
+  height: 350px;
 }
 
-.heading{
-    font-size: 28px;
-    font-weight: 600;
-    padding-bottom: 25px; 
-    margin-left: 1rem;
+.ct2 {
+  padding: 15px 55px 15px 55px;
 }
 
-.main-txt{
-    font-size: 23px;
-    font-weight: 450;
-    margin-left: 1rem;
+.heading {
+  font-size: 28px;
+  font-weight: 600;
+  padding-bottom: 25px;
+  margin-left: 1rem;
 }
 
-.prd-right{
-    text-align: center;
-margin-top: 6%;
+.main-txt {
+  font-size: 23px;
+  font-weight: 450;
+  margin-left: 1rem;
+}
+
+.prd-right {
+  text-align: center;
+  margin-top: 6%;
 }
 
 /* Section 1 */
+/* Slider */
+
+.slider {
+  width: 100%;
+  height: 80vh;
+  /* background: url(../images/slider.jpg) no-repeat center center/cover; */
+  position: relative;
+}
+
+.info-section {
+  border-radius: 25px;
+}
+
+.info-section img {
+  padding: 10px;
+  border-radius: 30px;
+}
+
+.footer {
+  background-color: #f5f5f5;
+  padding: 25px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  color: #000;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social a {
+  margin: 0 10px;
+  color: #000;
+  font-size: 20px;
+}
+
+.social a:hover {
+  color: red;
+}
+
+.footer-container p {
+  margin: 0;
+}
+
+.footer-container p a {
+  color: #000;
+  text-decoration: none;
+}
+
+.footer-container p a:hover {
+  color: red;
+}
