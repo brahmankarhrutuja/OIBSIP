@@ -16,3 +16,10 @@ body {
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
+h1 {
+    font-size: 24px;
+}
+
+.converter {
+    margin: 20px 0;
+}
