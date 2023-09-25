@@ -23,3 +23,7 @@ h1 {
 .converter {
     margin: 20px 0;
 }
+input[type="number"] {
+    padding: 5px;
+    width: 100px;
+}
