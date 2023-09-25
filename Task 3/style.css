@@ -38,3 +38,7 @@ button {
     border: none;
     cursor: pointer;
 }
+.result {
+    font-size: 18px;
+    font-weight: bold;
+}
