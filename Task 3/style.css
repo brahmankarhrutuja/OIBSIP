@@ -27,6 +27,10 @@ input[type="number"] {
     padding: 5px;
     width: 100px;
 }
+.result {
+    font-size: 18px;
+    font-weight: bold;
+}
 button {
     padding: 5px 10px;
     background-color: #007bff;
