@@ -13,3 +13,5 @@ document.addEventListener('DOMContentLoaded', function () {
             resultText.textContent = 'Please enter a valid number.';
             resultValue.textContent = '';
         }
+    });
+});
