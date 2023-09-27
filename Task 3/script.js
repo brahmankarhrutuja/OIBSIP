@@ -8,3 +8,4 @@ document.addEventListener('DOMContentLoaded', function () {
          if (!isNaN(celsius)) {
               const fahrenheit = (celsius * 9/5) + 32;
               resultText.textContent = `${celsius} Celsius is equal to `;
+          resultValue.textContent = `${fahrenheit.toFixed(2)} Fahrenheit`;
