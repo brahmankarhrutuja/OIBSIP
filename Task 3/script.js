@@ -6,3 +6,5 @@ document.addEventListener('DOMContentLoaded', function () {
      convertButton.addEventListener('click', function () {
         const celsius = parseFloat(celsiusInput.value);
          if (!isNaN(celsius)) {
+              const fahrenheit = (celsius * 9/5) + 32;
+              resultText.textContent = `${celsius} Celsius is equal to `;
