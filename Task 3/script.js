@@ -9,3 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
               const fahrenheit = (celsius * 9/5) + 32;
               resultText.textContent = `${celsius} Celsius is equal to `;
           resultValue.textContent = `${fahrenheit.toFixed(2)} Fahrenheit`;
+              } else {
+            resultText.textContent = 'Please enter a valid number.';
+            resultValue.textContent = '';
+        }
