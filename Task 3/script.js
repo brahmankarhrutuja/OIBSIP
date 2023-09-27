@@ -5,3 +5,4 @@ document.addEventListener('DOMContentLoaded', function () {
     const resultValue = document.getElementById('resultValue');
      convertButton.addEventListener('click', function () {
         const celsius = parseFloat(celsiusInput.value);
+         if (!isNaN(celsius)) {
