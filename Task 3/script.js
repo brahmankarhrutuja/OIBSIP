@@ -1,42 +1,35 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  body {
-    background: blue;
-  }
-  div {
-    height: 33.33vh;
-  }
-  #farenheit {
-    border-top: 4px solid white;
-    border-bottom: 4px solid white;
-  }
-  
-  input[type="number"] {
-    width: 100%;
-    height: 100%;
-    background-color: orange;
-    color: white;
-    font-size: 10em;
-    text-align: center;
-    border: 0em;
-    font-family: "asap", sans-serif;
-  }
-  ::placeholder {
-    color: #222222;
-  }
-  ::-webkit-inout-placeholder {
-    /* chrome/opera/safari */
-    color: #222222;
-  }
-  ::-moz-placeholder {
-    /* firefox */
-    color: #222222;
-  }
-  :-ms-input-placeholder {
-    /* edge */
-    color: #222222;
-  }
-  
+const celciusInput = document.querySelector('#celcius > input'); 
+const farenheitInput = document.querySelector('#farenheit > input'); 
+const kelvinInput = document.querySelector('#kelvin > input'); 
+
+function roundNum(num) {
+     return Math.round(num*100)/100;
+
+};
+function CelciusToFarenheitAndKelvin(){
+        const cTemp = parseFloat(celciusInput.value); 
+        const fTemp = (cTemp * (9/5)) + 32;
+        const kTemp = cTemp + 273.15;
+        farenheitInput.value = roundNum (fTemp);
+        kelvinInput.value = roundNum (kTemp); 
+}
+function  FarenheitToCelciusAndKelvin() {
+    const fTemp = parseFloat (farenheitInput.value);
+    const cTemp = (fTemp - 32) * (5/9);
+    const kTemp = (fTemp + 459.67) * (5/9);
+    celciusInput.value = roundNum (cTemp);
+    kelvinInput.value = roundNum (kTemp);
+}
+function kelvinToFarenheitAndCelcius() {
+    const kTemp = parseFloat(kelvinInput.value);
+    const fTemp = 9/5 * (kTemp - 273) + 32;
+    const cTemp = kTemp - 273.15;
+    celciusInput.value =roundNum (cTemp);
+    farenheitInput.value =roundNum (fTemp);  
+
+
+}
+celciusInput.addEventListener('input',CelciusToFarenheitAndKelvin);
+farenheitInput.addEventListener('input', FarenheitToCelciusAndKelvin);
+kelvinInput.addEventListener('input', kelvinToFarenheitAndCelcius);
+ 
